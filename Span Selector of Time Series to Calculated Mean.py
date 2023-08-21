@@ -103,7 +103,10 @@ def onselect(xmin, xmax):
             #print(e)
             e = str(e) #convert e type to string
             if e == "Couldn't find any active App!":
-                e = "\n" + e + "\n" + "Open an analisa excel file \n" + "Click Pause then click Quit to close this Debug Window"            
+                string1 = "Open an analisa excel file \n"
+                string2 = "Click Pause then click Quit to close this Debug Window"
+                string3 = "Then reload TimeSeries Data File again"
+                e = "\n" + e + "\n" + string1 + string2 + string3            
             else:
                 e = e
 
